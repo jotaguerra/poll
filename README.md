@@ -16,7 +16,7 @@ url: http://localhost:8080/v1/polls/{id}
 method: GET
 example:
 ```
-curl -X GET http://localhost:8080/v1/polls/site1
+curl -X GET http://localhost:8080/v1/polls/1
 ```
 
 
