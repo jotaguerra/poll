@@ -1,19 +1,29 @@
 language: java
+
 jdk:
   - oraclejdk8
 os:
   - linux
+
+#cache:
+#  - directories:
+#      "$HOME/.m2"
+#      "./mvnw --version"
+
 services:
   - docker
 
 
 before_install:
+  - "echo 'MAVEN_OPTS = $MAVEN_OPTS'"
   - docker build -t juakinggg/pollrest .
   - docker run -d -p 127.0.0.1:8080:8080 juakinggg/pollrest
   - docker ps -a
-  
+
+
 sudo: required
 
+# override default .mvnw
 install: true
 
-script: ./mvnw install
+script: mvn install
