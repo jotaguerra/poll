@@ -90,7 +90,7 @@ method: PUT
 
 example: 
 ```
-curl -X PUT -H 'Content-Type: application/json' -d '{"id":"1", site":"site1change2","name":"firstsite1change2", "xmldata":"new XML Data 2!..."}' http://localhost:8080/v1/polls/1
+curl -X PUT -H 'Content-Type: application/json' -d '{"id":"1", "site":"site1change2","name":"firstsite1change2", "xmldata":"new XML Data 2!..."}' http://localhost:8080/v1/polls/1
 ```
 
 
