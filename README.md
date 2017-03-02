@@ -7,6 +7,16 @@ First approach to a rest backend to create and search Polls.
 
 Build with Spring Boot and the modules WEB, JPA and H2.
 
+## Starting the app
+
+Move into project folder and type in a shell:
+
+```
+mvn spring-boot:run
+```
+
+In less than a minute your rest backend is ready. You can find on http://localhost:8080/v1/polls
+
 
 ## Endpoints
 
@@ -57,3 +67,5 @@ example:
 ```
 curl -X PUT -H 'Content-Type: application/json' -d '{"id":"2", site":"site2","name":"secondsite", "xmldata":"xml data 2..."}' http://localhost:8080/v1/polls/2
 ```
+
+
